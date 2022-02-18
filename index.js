@@ -1,32 +1,32 @@
-let calculator  = function () {
-  let result,
+var calculator = function() {
+  var total,
       firstN,
       secondN;
 
-
-return {
-  add: function(firstN, secondN) {
-    result = firstN + secondN
-    return result;
-  },
-  subtract: function(firstN, secondN) {
-    result = firstN - secondN
-    return result;
-  },
-  divide: function(firstN, secondN) {
-    result = firstN / secondN
-    return result;
-  },
-  multiply: function(firstN, secondN) {
-    result = firstN * secondN
-    return result;
-  },
-  result: function() {
-    return result;
+  var calcAPI = {
+      add: function(firstN, secondN) {
+          total = firstN + secondN
+          return total;
+      },
+      subtract: function(firstN, secondN) {
+          total = firstN - secondN
+          return total;
+      },
+      divide: function(firstN, secondN) {
+          total = firstN / secondN;
+          return total;
+      },
+      multiply: function(firstN, secondN) {
+          total = firstN * secondN;
+          return total;
+      },
+      total: function() {
+          return total;
+      }
   }
 
+  return calcAPI;
+  
 }
 
-}
-
-module.exprts = calculator();
+module.exports = calculator();
